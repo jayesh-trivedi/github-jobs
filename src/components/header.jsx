@@ -13,7 +13,7 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="container">
-          <a href="index.html">
+          <a href="/home">
             <img src={logo} />
           </a>
         </div>
