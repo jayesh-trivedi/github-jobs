@@ -60,7 +60,7 @@ class ViewJob extends Component {
                 <p class="location">{this.state.job.location}</p>
               </div>
             </div>
-            <div>
+            <div className=" apply_now">
               <button type="button" class="longbtn" onclick="search()">
                 <p>Apply Now</p>
               </button>

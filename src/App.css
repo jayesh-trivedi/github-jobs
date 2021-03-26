@@ -12,6 +12,12 @@ html {
 body {
   min-height: 100%;
 }
+
+.loading {
+  color: #2a00d3;
+  text-align: center;
+  width: 100%;
+}
 .header {
   background-image: url("assets/images/bg.svg");
   background-repeat: no-repeat;
@@ -145,6 +151,7 @@ button:hover {
 
 .results {
   padding-left: 50px;
+  padding-right: 50px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-row-gap: 4rem;
@@ -156,6 +163,7 @@ button:hover {
 .card {
   width: 100%;
   position: relative;
+  height: auto;
   padding: 2rem;
   padding-top: 0;
   min-height: 14.25rem;
@@ -165,7 +173,9 @@ button:hover {
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
 }
-
+.card:hover {
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
 .job_logo {
   transform: translate(0, -50%);
   width: 3rem;
@@ -196,6 +206,7 @@ button:hover {
   color: grey;
 }
 .company_name {
+  padding-left: 20px;
   font-size: 2rem;
   font-weight: 400;
   width: 100%;
@@ -203,8 +214,11 @@ button:hover {
 .longbtn {
   width: 180px;
 }
+.apply_now {
+  padding: 40px 0px 20px 0px;
+}
 .location {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   color: rgba(89, 100, 224, 1);
   font-weight: 700;
 }

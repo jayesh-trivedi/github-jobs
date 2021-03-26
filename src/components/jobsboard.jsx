@@ -9,11 +9,13 @@ class JobsBoard extends Component {
   }
   render() {
     return (
-      <div id="results" className="results">
-        {!this.props.loading && <h1>Loading...</h1>}
-        {this.props.jobs.map((job) => {
-          return <Job key={job.id} job={job} />;
-        })}
+      <div>
+        {!this.props.loading && <h1 className="loading">Loading...</h1>}
+        <div id="results" className="results">
+          {this.props.jobs.map((job) => {
+            return <Job key={job.id} job={job} />;
+          })}
+        </div>
       </div>
     );
   }
